@@ -1,49 +1,56 @@
 const fs = require("fs");
 const path = require("path");
 
+const SEASON = "20252026";
+const GAME_TYPE = 3;
+
 const OUTPUT = path.join(__dirname, "../data/stats-joueurs-auto.csv");
 
 const url =
-  "https://site.web.api.espn.com/apis/common/v3/sports/hockey/nhl/statistics/byathlete?region=us&lang=en&contentorigin=espn&isqualified=true&page=1&limit=500&sort=points%3Adesc&seasontype=3&season=2026";
+  `https://api-web.nhle.com/v1/skater-stats-leaders/${SEASON}/${GAME_TYPE}?categories=points&limit=-1`;
 
-function clean(v) {
-  if (v === null || v === undefined) return "";
-  return `"${String(v).replace(/"/g, '""')}"`;
+function csvEscape(value) {
+  if (value === null || value === undefined) return "";
+  return `"${String(value).replace(/"/g, '""')}"`;
 }
 
 async function main() {
   const res = await fetch(url);
+
+  if (!res.ok) {
+    throw new Error(`Erreur NHL API : ${res.status}`);
+  }
+
   const data = await res.json();
 
-  const athletes = data.athletes || [];
+  const joueurs = data.data || [];
 
-  const lignes = [
+  const lignes = [];
+
+  lignes.push(
     "Nom,Equipe,Position,Matchs,Buts,Passes,Points,Tirs"
-  ];
+  );
 
-  for (const item of athletes) {
-    const a = item.athlete || {};
-    const stats = item.categories?.[0]?.statistics || [];
-
-    const get = (name) => {
-      const s = stats.find(x => x.name === name || x.abbreviation === name);
-      return s?.value ?? s?.displayValue ?? 0;
-    };
+  for (const j of joueurs) {
+    const nom =
+      `${j.firstName?.default || ""} ${j.lastName?.default || ""}`.trim();
 
     lignes.push([
-      clean(a.displayName),
-      clean(a.teamShortName || a.teamName || ""),
-      clean(a.position?.abbreviation || ""),
-      get("gamesPlayed"),
-      get("goals"),
-      get("assists"),
-      get("points"),
-      get("shotsTotal")
+      csvEscape(nom),
+      csvEscape(j.teamAbbrev),
+      csvEscape(j.position),
+      j.gamesPlayed || 0,
+      j.goals || 0,
+      j.assists || 0,
+      j.points || 0,
+      j.shots || 0
     ].join(","));
   }
 
   fs.writeFileSync(OUTPUT, lignes.join("\n"), "utf8");
-  console.log(`${athletes.length} joueurs exportés`);
+
+  console.log("CSV généré !");
+  console.log(`${joueurs.length} joueurs exportés`);
 }
 
 main().catch(err => {
