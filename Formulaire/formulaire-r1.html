@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prédictions du pool</title>
+  <link rel="stylesheet" href="formulaire.css" />
+</head>
+<body>
+
+   <header class="pool-header">
+    <div class="pool-header__box">
+      <h1 class="pool-header__title">POOL SÉRIES 2026</h1>
+      <div class="pool-header__bar"></div>
+
+      <nav class="pool-header__nav">
+
+        <a class="pool-header__link" href="../index.html" aria-current="page">Règlements</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <h1>Prédictions du pool</h1>
+      <p>Remplis ta ronde 1, tes joueurs et ton choix de la Coupe Stanley.</p>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <form id="pool-form" action="./pool-r1.php" method="POST" class="pool-form">
+      <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <section class="form-card">
+        <div class="section-heading">
+          <h2>Informations du participant</h2>
+        </div>
+
+        <div class="form-grid form-grid--2">
+          <div class="field">
+            <label for="participantName">Nom du participant</label>
+            <input type="text" id="participantName" name="participantName" placeholder="Ton nom" required>
+          </div>
+
+          <div class="field field--checkbox">
+            <label class="toggle-box">
+              <input type="checkbox" id="enableSecondEntry" name="enableSecondEntry" value="1">
+              <span>Je veux une 2e entrée</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-card">
+        <div class="entry-title">
+          <h2>Entrée 1</h2>
+        </div>
+
+      <!-- Coupe Stanley -->
+<div class="sub-card">
+  <div class="section-heading">
+    <h3>Coupe Stanley - Entrée 1</h3>
+  </div>
+
+  <div class="team-list">
+
+    <label class="team-choice team-ana">
+      <input type="radio" name="entry1_cupWinner" value="Ducks d'Anaheim" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Ducks d'Anaheim</span>
+    </label>
+
+    <label class="team-choice team-bos">
+      <input type="radio" name="entry1_cupWinner" value="Bruins de Boston" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Bruins de Boston</span>
+    </label>
+
+    <label class="team-choice team-buf">
+      <input type="radio" name="entry1_cupWinner" value="Sabres de Buffalo" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Sabres de Buffalo</span>
+    </label>
+
+    <label class="team-choice team-car">
+      <input type="radio" name="entry1_cupWinner" value="Hurricanes de la Caroline" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Hurricanes de la Caroline</span>
+    </label>
+
+    <label class="team-choice team-col">
+      <input type="radio" name="entry1_cupWinner" value="Avalanche du Colorado" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Avalanche du Colorado</span>
+    </label>
+
+    <label class="team-choice team-dal">
+      <input type="radio" name="entry1_cupWinner" value="Stars de Dallas" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Stars de Dallas</span>
+    </label>
+
+    <label class="team-choice team-edm">
+      <input type="radio" name="entry1_cupWinner" value="Oilers d'Edmonton" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Oilers d'Edmonton</span>
+    </label>
+
+    <label class="team-choice team-lak">
+      <input type="radio" name="entry1_cupWinner" value="Kings de Los Angeles" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Kings de Los Angeles</span>
+    </label>
+
+    <label class="team-choice team-min">
+      <input type="radio" name="entry1_cupWinner" value="Wild du Minnesota" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Wild du Minnesota</span>
+    </label>
+
+    <label class="team-choice team-mtl">
+      <input type="radio" name="entry1_cupWinner" value="Canadiens de Montréal" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Canadiens de Montréal</span>
+    </label>
+
+    <label class="team-choice team-ott">
+      <input type="radio" name="entry1_cupWinner" value="Sénateurs d'Ottawa" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Sénateurs d'Ottawa</span>
+    </label>
+
+    <label class="team-choice team-phi">
+      <input type="radio" name="entry1_cupWinner" value="Flyers de Philadelphie" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Flyers de Philadelphie</span>
+    </label>
+
+    <label class="team-choice team-pit">
+      <input type="radio" name="entry1_cupWinner" value="Penguins de Pittsburgh" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Penguins de Pittsburgh</span>
+    </label>
+
+    <label class="team-choice team-tbl">
+      <input type="radio" name="entry1_cupWinner" value="Lightning de Tampa Bay" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Lightning de Tampa Bay</span>
+    </label>
+
+    <label class="team-choice team-utah">
+      <input type="radio" name="entry1_cupWinner" value="Mammoth de l'Utah" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Mammoth de l'Utah</span>
+    </label>
+
+    <label class="team-choice team-vgk">
+      <input type="radio" name="entry1_cupWinner" value="Golden Knights de Vegas" required>
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Golden Knights de Vegas</span>
+    </label>
+
+  </div>
+</div>
+        <!-- Joueurs -->
+        <div class="sub-card">
+          <div class="section-heading">
+            <h3>Joueurs - Entrée 1</h3>
+          </div>
+
+          <div class="form-grid form-grid--3">
+            <div class="field">
+              <label for="entry1_player1">Joueur 1</label>
+              <input type="text" id="entry1_player1" name="entry1_player1" placeholder="Joueur 1">
+            </div>
+
+            <div class="field">
+              <label for="entry1_player2">Joueur 2</label>
+              <input type="text" id="entry1_player2" name="entry1_player2" placeholder="Joueur 2">
+            </div>
+
+            <div class="field">
+              <label for="entry1_player3">Joueur 3</label>
+              <input type="text" id="entry1_player3" name="entry1_player3" placeholder="Joueur 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Ronde 1 -->
+<div class="sub-card">
+  <div class="section-heading">
+    <h3>Prédictions de la ronde 1</h3>
+    <p>Choisis le gagnant et le nombre de matchs.</p>
+  </div>
+
+  <div class="series-grid">
+
+    <div class="series-card">
+      <h4>Série 1</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-car">
+          <input type="radio" name="entry1_series1_winner" value="Hurricanes de la Caroline" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Hurricanes de la Caroline</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-ott">
+          <input type="radio" name="entry1_series1_winner" value="Sénateurs d'Ottawa" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Sénateurs d'Ottawa</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series1Games">Nombre de matchs</label>
+        <select id="entry1Series1Games" name="entry1_series1_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 2</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-buf">
+          <input type="radio" name="entry1_series2_winner" value="Sabres de Buffalo" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Sabres de Buffalo</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-bos">
+          <input type="radio" name="entry1_series2_winner" value="Bruins de Boston" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Bruins de Boston</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series2Games">Nombre de matchs</label>
+        <select id="entry1Series2Games" name="entry1_series2_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 3</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-tbl">
+          <input type="radio" name="entry1_series3_winner" value="Lightning de Tampa Bay" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Lightning de Tampa Bay</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-mtl">
+          <input type="radio" name="entry1_series3_winner" value="Canadiens de Montréal" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Canadiens de Montréal</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series3Games">Nombre de matchs</label>
+        <select id="entry1Series3Games" name="entry1_series3_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 4</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-pit">
+          <input type="radio" name="entry1_series4_winner" value="Penguins de Pittsburgh" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Penguins de Pittsburgh</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-phi">
+          <input type="radio" name="entry1_series4_winner" value="Flyers de Philadelphie" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Flyers de Philadelphie</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series4Games">Nombre de matchs</label>
+        <select id="entry1Series4Games" name="entry1_series4_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 5</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-col">
+          <input type="radio" name="entry1_series5_winner" value="Avalanche du Colorado" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Avalanche du Colorado</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-lak">
+          <input type="radio" name="entry1_series5_winner" value="Kings de Los Angeles" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Kings de Los Angeles</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series5Games">Nombre de matchs</label>
+        <select id="entry1Series5Games" name="entry1_series5_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 6</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-vgk">
+          <input type="radio" name="entry1_series6_winner" value="Golden Knights de Vegas" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Golden Knights de Vegas</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-utah">
+          <input type="radio" name="entry1_series6_winner" value="Mammoth de l'Utah" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Mammoth de l'Utah</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series6Games">Nombre de matchs</label>
+        <select id="entry1Series6Games" name="entry1_series6_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 7</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-dal">
+          <input type="radio" name="entry1_series7_winner" value="Stars de Dallas" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Stars de Dallas</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-min">
+          <input type="radio" name="entry1_series7_winner" value="Wild du Minnesota" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Wild du Minnesota</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series7Games">Nombre de matchs</label>
+        <select id="entry1Series7Games" name="entry1_series7_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 8</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-edm">
+          <input type="radio" name="entry1_series8_winner" value="Oilers d'Edmonton" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Oilers d'Edmonton</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-ana">
+          <input type="radio" name="entry1_series8_winner" value="Ducks d'Anaheim" required>
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Ducks d'Anaheim</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry1Series8Games">Nombre de matchs</label>
+        <select id="entry1Series8Games" name="entry1_series8_games" required>
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+      </section>
+
+      <section class="form-card" id="entry2Block" style="display:none;">
+  <div class="entry-title">
+    <h2>Entrée 2</h2>
+  </div>
+
+ <!-- Coupe Stanley -->
+<div class="sub-card">
+  <div class="section-heading">
+    <h3>Coupe Stanley - Entrée 2</h3>
+  </div>
+
+  <div class="team-list">
+
+    <label class="team-choice team-ana">
+      <input type="radio" name="entry2_cupWinner" value="Ducks d'Anaheim">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Ducks d'Anaheim</span>
+    </label>
+
+    <label class="team-choice team-bos">
+      <input type="radio" name="entry2_cupWinner" value="Bruins de Boston">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Bruins de Boston</span>
+    </label>
+
+    <label class="team-choice team-buf">
+      <input type="radio" name="entry2_cupWinner" value="Sabres de Buffalo">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Sabres de Buffalo</span>
+    </label>
+
+    <label class="team-choice team-car">
+      <input type="radio" name="entry2_cupWinner" value="Hurricanes de la Caroline">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Hurricanes de la Caroline</span>
+    </label>
+
+    <label class="team-choice team-col">
+      <input type="radio" name="entry2_cupWinner" value="Avalanche du Colorado">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Avalanche du Colorado</span>
+    </label>
+
+    <label class="team-choice team-dal">
+      <input type="radio" name="entry2_cupWinner" value="Stars de Dallas">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Stars de Dallas</span>
+    </label>
+
+    <label class="team-choice team-edm">
+      <input type="radio" name="entry2_cupWinner" value="Oilers d'Edmonton">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Oilers d'Edmonton</span>
+    </label>
+
+    <label class="team-choice team-lak">
+      <input type="radio" name="entry2_cupWinner" value="Kings de Los Angeles">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Kings de Los Angeles</span>
+    </label>
+
+    <label class="team-choice team-min">
+      <input type="radio" name="entry2_cupWinner" value="Wild du Minnesota">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Wild du Minnesota</span>
+    </label>
+
+    <label class="team-choice team-mtl">
+      <input type="radio" name="entry2_cupWinner" value="Canadiens de Montréal">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Canadiens de Montréal</span>
+    </label>
+
+    <label class="team-choice team-ott">
+      <input type="radio" name="entry2_cupWinner" value="Sénateurs d'Ottawa">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Sénateurs d'Ottawa</span>
+    </label>
+
+    <label class="team-choice team-phi">
+      <input type="radio" name="entry2_cupWinner" value="Flyers de Philadelphie">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Flyers de Philadelphie</span>
+    </label>
+
+    <label class="team-choice team-pit">
+      <input type="radio" name="entry2_cupWinner" value="Penguins de Pittsburgh">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Penguins de Pittsburgh</span>
+    </label>
+
+    <label class="team-choice team-tbl">
+      <input type="radio" name="entry2_cupWinner" value="Lightning de Tampa Bay">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Lightning de Tampa Bay</span>
+    </label>
+
+    <label class="team-choice team-utah">
+      <input type="radio" name="entry2_cupWinner" value="Mammoth de l'Utah">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Mammoth de l'Utah</span>
+    </label>
+
+    <label class="team-choice team-vgk">
+      <input type="radio" name="entry2_cupWinner" value="Golden Knights de Vegas">
+      <span class="team-choice__logo"></span>
+      <span class="team-choice__name">Golden Knights de Vegas</span>
+    </label>
+
+  </div>
+</div>
+
+  <!-- Joueurs -->
+  <div class="sub-card">
+    <div class="section-heading">
+      <h3>Joueurs - Entrée 2</h3>
+    </div>
+
+    <div class="form-grid form-grid--3">
+      <div class="field">
+        <label for="entry2_player1">Joueur 1</label>
+        <input type="text" id="entry2_player1" name="entry2_player1" placeholder="Joueur 1">
+      </div>
+
+      <div class="field">
+        <label for="entry2_player2">Joueur 2</label>
+        <input type="text" id="entry2_player2" name="entry2_player2" placeholder="Joueur 2">
+      </div>
+
+      <div class="field">
+        <label for="entry2_player3">Joueur 3</label>
+        <input type="text" id="entry2_player3" name="entry2_player3" placeholder="Joueur 3">
+      </div>
+    </div>
+  </div>
+
+<!-- Ronde 1 -->
+<div class="sub-card">
+  <div class="section-heading">
+    <h3>Prédictions de la ronde 1 - Entrée 2</h3>
+    <p>Choisis le gagnant et le nombre de matchs.</p>
+  </div>
+
+  <div class="series-grid">
+
+    <div class="series-card">
+      <h4>Série 1</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-car">
+          <input type="radio" name="entry2_series1_winner" value="Hurricanes de la Caroline">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Hurricanes de la Caroline</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-ott">
+          <input type="radio" name="entry2_series1_winner" value="Sénateurs d'Ottawa">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Sénateurs d'Ottawa</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series1Games">Nombre de matchs</label>
+        <select id="entry2Series1Games" name="entry2_series1_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 2</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-buf">
+          <input type="radio" name="entry2_series2_winner" value="Sabres de Buffalo">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Sabres de Buffalo</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-bos">
+          <input type="radio" name="entry2_series2_winner" value="Bruins de Boston">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Bruins de Boston</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series2Games">Nombre de matchs</label>
+        <select id="entry2Series2Games" name="entry2_series2_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 3</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-tbl">
+          <input type="radio" name="entry2_series3_winner" value="Lightning de Tampa Bay">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Lightning de Tampa Bay</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-mtl">
+          <input type="radio" name="entry2_series3_winner" value="Canadiens de Montréal">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Canadiens de Montréal</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series3Games">Nombre de matchs</label>
+        <select id="entry2Series3Games" name="entry2_series3_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 4</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-pit">
+          <input type="radio" name="entry2_series4_winner" value="Penguins de Pittsburgh">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Penguins de Pittsburgh</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-phi">
+          <input type="radio" name="entry2_series4_winner" value="Flyers de Philadelphie">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Flyers de Philadelphie</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series4Games">Nombre de matchs</label>
+        <select id="entry2Series4Games" name="entry2_series4_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 5</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-col">
+          <input type="radio" name="entry2_series5_winner" value="Avalanche du Colorado">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Avalanche du Colorado</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-lak">
+          <input type="radio" name="entry2_series5_winner" value="Kings de Los Angeles">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Kings de Los Angeles</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series5Games">Nombre de matchs</label>
+        <select id="entry2Series5Games" name="entry2_series5_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 6</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-vgk">
+          <input type="radio" name="entry2_series6_winner" value="Golden Knights de Vegas">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Golden Knights de Vegas</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-utah">
+          <input type="radio" name="entry2_series6_winner" value="Mammoth de l'Utah">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Mammoth de l'Utah</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series6Games">Nombre de matchs</label>
+        <select id="entry2Series6Games" name="entry2_series6_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 7</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-dal">
+          <input type="radio" name="entry2_series7_winner" value="Stars de Dallas">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Stars de Dallas</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-min">
+          <input type="radio" name="entry2_series7_winner" value="Wild du Minnesota">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Wild du Minnesota</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series7Games">Nombre de matchs</label>
+        <select id="entry2Series7Games" name="entry2_series7_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="series-card">
+      <h4>Série 8</h4>
+      <div class="matchup-team-pick">
+        <label class="team-pick team-edm">
+          <input type="radio" name="entry2_series8_winner" value="Oilers d'Edmonton">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Oilers d'Edmonton</span>
+        </label>
+
+        <div class="matchup-vs">VS</div>
+
+        <label class="team-pick team-ana">
+          <input type="radio" name="entry2_series8_winner" value="Ducks d'Anaheim">
+          <span class="team-pick__logo"></span>
+          <span class="team-pick__name">Ducks d'Anaheim</span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="entry2Series8Games">Nombre de matchs</label>
+        <select id="entry2Series8Games" name="entry2_series8_games">
+          <option value="">Choisir</option>
+          <option value="4">4 matchs</option>
+          <option value="5">5 matchs</option>
+          <option value="6">6 matchs</option>
+          <option value="7">7 matchs</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+     <div class="form-actions">
+  <button type="submit" class="submit-btn" id="submitBtn">
+    <span class="submit-btn__text">Envoyer</span>
+    <span class="submit-btn__loader" aria-hidden="true"></span>
+  </button>
+</div>
+
+<div id="pool-result" class="pool-result"></div>
+    </form>
+  </main>
+
+  <script>
+  (function () {
+    const form = document.getElementById('pool-form');
+    const box = document.getElementById('pool-result');
+    const toggle = document.getElementById('enableSecondEntry');
+    const entry2 = document.getElementById('entry2Block');
+    const submitBtn = document.getElementById('submitBtn');
+
+    if (!form || !box || !submitBtn) return;
+
+    let isSubmitting = false;
+
+    function setSubmittingState(state) {
+      isSubmitting = state;
+      submitBtn.disabled = state;
+      submitBtn.classList.toggle('is-loading', state);
+
+      const text = submitBtn.querySelector('.submit-btn__text');
+      if (text) {
+        text.textContent = state ? 'Envoi en cours...' : 'Envoyer';
+      }
+    }
+
+    if (toggle && entry2) {
+      toggle.addEventListener('change', function () {
+        entry2.style.display = this.checked ? 'block' : 'none';
+      });
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      if (isSubmitting) return;
+
+      const hasSecondEntry = !!(toggle && toggle.checked);
+      const amount = hasSecondEntry ? 20 : 10;
+
+      box.className = 'pool-result';
+      box.textContent = 'Envoi en cours...';
+      setSubmittingState(true);
+
+      try {
+        const res = await fetch('./pool-r1.php', {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+          }
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.ok) {
+          window.location.href = `merci.html?amount=${amount}&entries=${hasSecondEntry ? 2 : 1}`;
+          return;
+        } else {
+          box.classList.add('err');
+          box.textContent = data.error || 'Une erreur est survenue.';
+          setSubmittingState(false);
+        }
+      } catch (err) {
+        console.error(err);
+        box.classList.add('err');
+        box.textContent = 'Erreur serveur.';
+        setSubmittingState(false);
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>

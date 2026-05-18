@@ -1,0 +1,23 @@
+﻿joueur;equipe;poste;numero;buts;passes;plusMinus;tirs;totalPoints
+Sebastian Aho;Hurricanes de la Caroline;Centre;20;3;0;1;10;1
+Matt Boldy;Wild du Minnesota;Aile Gauche;12;0;0;0;0;0
+Leo Carlsson;Ducks d'Anaheim;Centre;91;0;0;0;0;0
+Cole Caufield;Canadiens de Montréal;Aile Droite;13;1;3;-4;12;4
+Sidney Crosby;Penguins de Pittsburgh;Centre;87;1;4;-1;18;5
+Rasmus Dahlin;Sabres de Buffalo;Defenseur;26;1;3;3;21;4
+Jack Eichel;Golden Knights de Vegas;Centre;9;0;0;0;0;0
+Taylor Hall;Hurricanes de la Caroline;Aile Gauche;71;0;0;0;0;0
+Quinn Hughes;Wild du Minnesota;Defenseur;43;0;0;0;0;0
+Lane Hutson;Canadiens de Montréal;Defenseur;48;2;4;0;13;6
+Kirill Kaprizov;Wild du Minnesota;Aile Gauche;97;2;7;11;15;6
+Nikita Kucherov;Lightning de Tampa Bay;Aile Droite;86;1;5;2;31;6
+Nathan MacKinnon;Avalanche du Colorado;Centre;27;2;2;4;12;4
+Cale Makar;Avalanche du Colorado;Defenseur;29;2;0;4;12;2
+Mitch Marner;Golden Knights de Vegas;Aile Droite;93;0;0;0;0;0
+Connor McDavid;Oilers d'Edmonton;Centre;97;1;5;-8;20;6
+Martin Necas;Avalanche du Colorado;Centre;88;0;2;4;12;2
+David Pastrnak;Bruins de Boston;Aile Droite;88;3;4;-7;22;7
+Mikko Rantanen;Stars de Dallas;Aile Droite;96;1;6;-8;14;6
+Logan Stankoven;Hurricanes de la Caroline;Centre;22;0;0;0;0;0
+Nick Suzuki;Canadiens de Montréal;Centre;14;1;5;-3;10;6
+Tage Thompson;Sabres de Buffalo;Aile Droite;72;2;5;7;26;7

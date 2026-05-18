@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merci pour vos choix</title>
+  <style>
+    :root {
+      --primary: #bc1833;
+      --dark: #111a44;
+      --muted: #6f7f9b;
+      --bg: #f6eff2;
+      --panel: rgba(255,255,255,0.88);
+      --panel-border: rgba(255,255,255,0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #f8f1f4 0%, #f3ecef 100%);
+      color: var(--dark);
+    }
+
+    .thanks-wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .thanks-card {
+      width: min(760px, 100%);
+      padding: clamp(26px, 4vw, 40px);
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at top left, rgba(188,24,51,0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(24,18,109,0.08), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.86));
+      border: 1px solid var(--panel-border);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+      text-align: center;
+    }
+
+    .thanks-badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(188,24,51,0.08);
+      border: 1px solid rgba(188,24,51,0.14);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .thanks-title {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      color: var(--dark);
+    }
+
+    .thanks-text {
+      margin: 0 auto 26px;
+      max-width: 620px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .thanks-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .thanks-box {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(17,26,68,0.08);
+      box-shadow: 0 8px 20px rgba(15,23,42,0.05);
+    }
+
+    .thanks-box__label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+    }
+
+    .thanks-box__value {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-weight: 900;
+      color: var(--dark);
+    }
+
+    .thanks-note {
+      margin: 0 auto 28px;
+      max-width: 620px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(10,16,32,0.03), rgba(24,18,109,0.05));
+      border: 1px solid rgba(24,18,109,0.08);
+      color: var(--dark);
+      line-height: 1.65;
+    }
+
+    .thanks-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .thanks-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .thanks-btn--primary {
+      color: #fff;
+      background: linear-gradient(135deg, #bc1833 0%, #8b1025 100%);
+      box-shadow: 0 10px 22px rgba(188,24,51,0.22);
+    }
+
+    .thanks-btn--secondary {
+      color: var(--dark);
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(17,26,68,0.08);
+    }
+
+    .thanks-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 700px) {
+      .thanks-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="thanks-wrap">
+    <section class="thanks-card">
+      <span class="thanks-badge">Confirmation</span>
+      <h1 class="thanks-title">Merci pour vos choix !</h1>
+      <p class="thanks-text">
+        Votre formulaire a bien été envoyé. Pour compléter votre participation, veuillez faire parvenir le montant par virement.
+      </p>
+
+      <div class="thanks-grid">
+        <div class="thanks-box">
+          <span class="thanks-box__label">Entrées</span>
+          <div class="thanks-box__value" id="entriesValue">1</div>
+        </div>
+
+        <div class="thanks-box">
+          <span class="thanks-box__label">Montant à envoyer</span>
+          <div class="thanks-box__value" id="amountValue">10 $</div>
+        </div>
+
+        <div class="thanks-box">
+          <span class="thanks-box__label">Virement</span>
+          <div class="thanks-box__value">514-977-6286</div>
+        </div>
+      </div>
+
+      <div class="thanks-note">
+        Envoyez votre virement au <strong>514-977-6286</strong>.
+        Le montant demandé dépend du nombre d’entrées soumises.
+      </div>
+
+      <div class="thanks-actions">
+        <a href="index.html" class="thanks-btn thanks-btn--primary">Retour aux règlements</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const amount = parseInt(params.get('amount'), 10);
+      const entries = parseInt(params.get('entries'), 10);
+
+      document.getElementById('amountValue').textContent =
+        amount === 20 ? '20 $' : '10 $';
+
+      document.getElementById('entriesValue').textContent =
+        entries === 2 ? '2' : '1';
+    })();
+  </script>
+</body>
+</html>
