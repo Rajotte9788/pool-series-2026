@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement Joueurs</title>
+    <link rel="stylesheet" href="classement.css">
+</head>
+<script src="classement.js"></script>
+<body>
+ <header class="pool-header">
+  <div class="pool-header__box">
+    <h1 class="pool-header__title">POOL SÉRIES 2026</h1>
+    <div class="pool-header__bar"></div>
+
+    <nav class="pool-header__nav pool-header__nav--4">
+      <a class="pool-header__link" href="index.html">Accueil</a>
+      <a class="pool-header__link" href="Prediction.html">Prédictions joueurs</a>
+      <a class="pool-header__link" href="classement.html">Classement</a>
+      <a class="pool-header__link" href="statistiques.html">Statistiques</a>
+    </nav>
+  </div>
+</header>
+<!--
+<section class="survey-section">
+  <div class="survey-card">
+    <h2>Aidez-moi à améliorer le pool</h2>
+    <a href="Formulaire/sondage.html" class="survey-btn">
+      Répondre au sondage
+    </a>
+  </div>
+</section>
+--><!--
+<section class="deadline-alert">
+  <div class="deadline-alert__content">
+    <strong>Rappel important</strong>
+    <p>Vous devez faire vos choix le reste de vos prédictions pour la ronde 3 avant le <b>20 mai à 17h</b>.</p>
+    <a href="Formulaire/formulaire-r3.html">Faire mes choix</a>
+  </div>
+</section>
+-->
+
+<br><br>
+
+<div class="container2">
+  <div class="container">
+    
+    <div class="ranking-hero">
+    
+  <p class="ranking-hero__kicker">classement officiel</p>
+
+  <div class="last-update">
+    Dernière mise à jour : <strong>17 mai 2026 9h30</strong>
+  </div>
+
+  <h2 class="ranking-hero__title">Classement des joueurs</h2>
+
+  
+
+
+    <table class="classement-table">
+      <thead>
+  <tr>
+    <th class="thRang2">RANG</th>
+    <th class="thNom">NOM DES JOUEURS</th>
+    <th>
+      <span class="tooltip">POINTS ÉQUIPES
+        <span class="tooltiptext">Points pour avoir trouvé l'équipe gagnante de la série</span>
+      </span>
+    </th>
+    <th>
+      <span class="tooltip">POINTS PARTIES
+        <span class="tooltiptext">Points pour avoir deviné le nombre exact de matchs, avec une marge d'erreur de ±1.</span>
+      </span>
+    </th>
+    <th class="thPP">
+      <span class="tooltip">PRÉDICTION PARFAITE
+        <span class="tooltiptext">Nombre de prédictions exactes pour la série et son nombre de matchs.</span>
+      </span>
+    </th>
+    <th>
+      <span class="tooltip">POINTS JOUEURS
+        <span class="tooltiptext">Points des joueurs sélectionnés avec leurs statistiques selon les critères.</span>
+      </span>
+    </th>
+    <th>POINTS TOTAUX</th>
+    <th>
+      <span class="tooltip">TENDANCE
+        <span class="tooltiptext">Tendance ajoutée manuellement</span>
+      </span>
+    </th>
+  </tr>
+</thead>
+      <tbody id="classementBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="ranking-tiebreak">
+    <strong>Départage en cas d’égalité :</strong>
+    si deux participants ou plus terminent avec le même total de points, le classement officiel est déterminé dans l’ordre suivant : <br>
+    <span>1. Prédictions parfaites</span><br>
+    <span>2. Points équipes</span> <br>
+    <span>3. Points parties</span> <br>
+    <span>4. Points joueurs</span> <br>
+  </div>
+</div>
+
+
+<div class="container2">
+  <div class="container">
+    <div class="ranking-hero">
+      <p class="ranking-hero__kicker">classement officiel</p>
+      <h2 class="ranking-hero__title">Points joueurs par ronde</h2>
+    </div>
+
+    <table class="classement-table classement-table--joueurs-rondes">
+      <thead>
+        <tr>
+          <th class="thRang2">RANG</th>
+          <th class="thNom">NOM DES JOUEURS</th>
+          <th>RONDE 1</th>
+          <th>RONDE 2</th>
+          <th>RONDE 3</th>
+          <th>RONDE 4</th>
+          <th>TOTAL JOUEURS</th>
+        </tr>
+      </thead>
+      <tbody id="classementJoueursRondesBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<section class="home-page">
+  <div class="panel exchange-section">
+    <div class="exchange-hero">
+      <p class="exchange-hero__kicker">ÉCHANGES OFFICIELS</p>
+      <h2 class="exchange-hero__title">Échanges de joueurs</h2>
+      <p class="exchange-hero__text">
+  Un seul échange est autorisé par participant pendant le pool. Lorsqu’un joueur est remplacé, les points accumulés par l’ancien joueur restent conservés, 
+  tandis que les points du nouveau joueur sont comptabilisés uniquement à partir de la nouvelle ronde suivant l’échange.
+      </p>
+    </div>
+
+    <div id="exchangeGrid" class="exchange-grid"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+        <p>&copy; 2026 Pool Séries LNH. Tous droits réservés.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistiques avancées du pool</title>
+
+  <link rel="stylesheet" href="statistiques.css">
+
+  <script defer src="classement.js"></script>
+  <script defer src="statistiques.js"></script>
+</head>
+
+<body>
+
+<header class="pool-header">
+  <div class="pool-header__box">
+    <h1 class="pool-header__title">POOL SÉRIES 2026</h1>
+    <div class="pool-header__bar"></div>
+
+    <nav class="pool-header__nav pool-header__nav--4">
+      <a class="pool-header__link" href="index.html">Accueil</a>
+      <a class="pool-header__link" href="Prediction.html">Prédictions joueurs</a>
+      <a class="pool-header__link" href="classement.html">Classement</a>
+      <a class="pool-header__link" href="statistiques.html">Statistiques</a>
+    </nav>
+  </div>
+</header>
+<main class="stats-page">
+
+  <nav class="round-menu">
+    <button class="round-tab active" data-view="global">Vue globale</button>
+    <button class="round-tab" data-view="1">Ronde 1</button>
+    <button class="round-tab" data-view="2">Ronde 2</button>
+    <button class="round-tab" data-view="3">Ronde 3</button>
+    <button class="round-tab" data-view="4">Ronde 4</button>
+  </nav>
+
+  <section id="viewGlobal" class="stats-view active">
+    <h2 class="section-title">Vue globale du pool</h2>
+    <div id="globalStats" class="stats-grid"></div>
+  </section>
+
+  <section id="viewRounds" class="stats-view">
+    <div id="roundStats"></div>
+  </section>
+
+</main>
+
+</body>
+</html>
