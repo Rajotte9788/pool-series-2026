@@ -7,7 +7,7 @@ const GAME_TYPE = 3;
 const OUTPUT = path.join(__dirname, "../data/stats-joueurs-auto.csv");
 
 const url =
-  `https://api-web.nhle.com/v1/skater-stats-leaders/${SEASON}/${GAME_TYPE}?categories=points&limit=-1`;
+  `https://api-web.nhle.com/v1/skater-stats-leaders/${SEASON}/${GAME_TYPE}?categories=points&limit=100`;
 
 function csvEscape(value) {
   if (value === null || value === undefined) return "";
